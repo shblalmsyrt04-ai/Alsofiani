@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>تواصل</title>
+  <meta name="description" content="مكتبة الأفق — موقع تفاعلي تعليمي." />
+  <link rel="stylesheet" href="../css/library-style.css" />
+  <script defer src="../js/main.js"></script>
+</head>
+<body>
+  <header>
+    <div class="topbar container">
+      <div class="brand">
+        <span class="logo" aria-hidden="true"></span>
+        <h1>مكتبة الأفق</h1>
+      </div>
+      <div class="banner-tools">
+        <button class="theme-toggle" onclick="toggleTheme()" aria-label="تبديل السمة لون">🎨 سمة</button>
+        <span class="badge">📚 معرفة</span>
+        <span class="badge">🎯 تفاعل</span>
+        <span class="badge">⚡ أداء</span>
+      </div>
+    </div>
+  </header>
+  <nav>
+    <div class="nav-inner container">
+      <button class="burger" aria-label="فتح/إغلاق القائمة" onclick="toggleMenu()">☰</button>
+      <div class="nav-links" id="nav-links">
+        <a href="index.html">الرئيسية</a>
+        <a href="books.html">الكتب</a>
+        <a href="about.html">حول</a>
+        <a href="services.html">الخدمات</a>
+        <a href="gallery.html">المعرض</a>
+        <a href="contact.html">تواصل</a>
+        <a href="login.html">تسجيل الدخول</a>
+        <a href="signup.html">إنشاء حساب</a>
+        <a href="dashboard.html">لوحة المستخدم</a>
+      </div>
+    </div>
+  </nav>
+  <main class="container">
+
+<section class="grid grid-2">
+  <article class="card reveal">
+    <h2>تواصل معنا</h2>
+    <form id="contact-form" onsubmit="return submitContact(event)">
+      <label for="name">الاسم</label>
+      <input id="name" required type="text" placeholder="الاسم الكامل">
+      <label for="email">البريد الإلكتروني</label>
+      <input id="email" required type="text" placeholder="email@example.com">
+      <label for="msg">الرسالة</label>
+      <textarea id="msg" required rows="5" placeholder="اكتب رسالتك هنا..."></textarea>
+      <div class="form-actions">
+        <button type="submit">إرسال</button>
+        <span id="contact-status" class="hidden" role="status">تم الإرسال ✅</span>
+      </div>
+    </form>
+  </article>
+  <aside class="card reveal">
+    <h3>صورة من المكتبة</h3>
+    <figure>
+      <img src="../images/library2.jpg" alt="ركن قراءة داخل المكتبة">
+      <figcaption>أجواء قراءة هادئة ومناسبة للدراسة.</figcaption>
+    </figure>
+  </aside>
+</section>
+
+  </main>
+  <footer>
+    <div class="container footer-actions">
+      <button class="btn" onclick="scrollToTop()">↑ للأعلى</button>
+      <a class="btn" href="mailto:info@library.com">📧 راسلنا</a>
+      <a class="btn" href="tel:+123456789">📞 اتصال</a>
+    </div>
+    <p style="margin:10px 0 0">&copy; 2025 مكتبة الأفق — جميع الحقوق محفوظة</p>
+  </footer>
+</body>
+</html>
